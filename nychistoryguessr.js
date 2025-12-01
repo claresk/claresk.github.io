@@ -3,7 +3,7 @@ let answerLatLng = null;
 let answerYear = null;
 let rounds = [];
 function getImage() {
-    fetch('https://raw.githubusercontent.com/claresk/test/refs/heads/main/data.json')
+    fetch('https://raw.githubusercontent.com/claresk/claresk.github.io/refs/heads/main/data.json')
        .then(response => response.json())
        .then(data => {
             let random = Math.floor(Math.random()*data.length);
@@ -186,3 +186,4 @@ document.getElementById('submitbutton').addEventListener('click', () => {
         });
     };
 });
+
