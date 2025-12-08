@@ -151,15 +151,6 @@ document.getElementById('submitbutton').addEventListener('click', () => {
             label.style.left = `${x}px`;
             label.textContent = answerYear;
             year.textContent = null;
-            
-            // drawing a line between two dots
-            //const pctxG = (slider.value-slider.min) / (slider.max-slider.min);
-            //const xG = pctxG*(slider.offsetWidth);
-            //const left = Math.min(xG, x) + 20;
-            //const length = Math.abs(x - xG) - 20;
-            //line.style.left = `${left}px`;
-            //line.style.width = `${length}px`;
-            //line.style.opacity = 1;
         }
         showCorrectYear()
         window.addEventListener("resize", () => {
@@ -186,4 +177,5 @@ document.getElementById('submitbutton').addEventListener('click', () => {
         });
     };
 });
+
 
